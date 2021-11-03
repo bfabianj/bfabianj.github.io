@@ -3,7 +3,9 @@
 **************************/
 .main-header {
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    background-color: #211E5F;
 
     @media (max-width: 768px) {
         & {
@@ -29,12 +31,12 @@
         NAV BAR
 **************************/
 .nav-bar {
-        background-color: mediumturquoise;
+        /* background-color: mediumturquoise; */
 
     &__nav-list {
         display: flex;
         list-style-type: none;
-        justify-content: center;
+        justify-content: right;
 
         @media (max-width: 768px) {
             & {
@@ -46,10 +48,10 @@
         text-align: center;
         background-color: pink;
     }
-    
+
     &__nav-link {
         display: block;
-        background-color: purple;
+        background-color: #211E5F   ;
         color: #fff;
         padding: 1em 2em;
         text-decoration: none;
@@ -65,44 +67,50 @@
 /**************************
         SEARCH BAR
 **************************/
-    .search-bar {
-        background-color: olivedrab;
+.search-bar {
+    background-color: #211E5F;
+    display: flex;
+    justify-content: left;
+
+    &__logo-container,
+    &__form-container {
+        padding: 1em;
+    }
+
+    &__logo-container {
+        color: white;
+        background-color: #211E5F;
+    }
+
+    &__form-container {
+        background-color: #211E5F;
+        flex-basis: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        color: white;
+        margin: auto;
+    }
 
-        &__logo-container,
-        &__form-container {
-            padding: 1em;
-        }
+    &__form-label {
+        /* background-color: greenyellow; */
+        display: none;
+    }
 
-        &__logo-container {
-            background-color: yellow;
-        }
+    &__form-search {
+        background-color: white;
+        width: 70%;
+    }
 
-        &__form-container {
-            background-color: gold;
-            flex-basis: 100%;
-            display: flex;
-            justify-content: center;
-        }
+    &__form-submit {
+        background-color: darkslategray;
+        color: white;
+    }
 
-        &__form-label {
-            background-color: greenyellow;
-        }
-
-        &__form-search {
-            background-color: deeppink;
-            width: 70%;
-        }
-
-        &__form-submit {
-            background-color: darkslategray;
-        }
-
-        &__carrito-container {
-            flex: 0 0 3em; /*flex-grow, flex-shrink, flex-basis */
-            background-color: goldenrod;
-        }
+    &__carrito-container {
+        flex: 0 0 3em; /*flex-grow, flex-shrink, flex-basis */
+        color: white;
+        margin: auto;
+        padding: .5em;
 }
 
 /**************************
@@ -150,5 +158,6 @@
         & {
             display: block;
         }
+    }
     }
 }
