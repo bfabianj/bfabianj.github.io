@@ -89,6 +89,7 @@
         justify-content: center;
         color: white;
         margin: auto;
+        width: 30em;
     }
 
     &__form-label {
@@ -99,11 +100,14 @@
     &__form-search {
         background-color: white;
         width: 70%;
+        border-radius: 1em;
+        border: none;
     }
 
     &__form-submit {
-        background-color: darkslategray;
+        background-color: #211E5F;
         color: white;
+        margin-left: 1em;
     }
 
     &__carrito-container {
@@ -118,15 +122,16 @@
 **************************/
 .menu-toggle {
     display: none;
-    background-color: red;
+    background-color: #211E5F;
     flex: 0 0 3em;
     position: relative;
     cursor: pointer;
 
     &__label {
         display: block;
-        background-color: black;
-        /* width: 100%; */
+        border: .1em solid white;
+        border-radius: .2em;
+        background-color: #211E5F;
         height: 100%;
     }
 
@@ -134,7 +139,7 @@
     &__meat,
     &__bottom-bread {
         display: block;
-        background-color: #333;
+        background-color: rgb(179, 178, 178);
         height: 0.2em;
         position: absolute;
         left: 0.5em;
@@ -155,9 +160,9 @@
     }
 
     @media (max-width: 768px) {
-        & {
+            & {
             display: block;
+            }
         }
-    }
     }
 }

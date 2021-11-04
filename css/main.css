@@ -183,6 +183,7 @@ body {
   justify-content: center;
   color: white;
   margin: auto;
+  width: 30em;
 }
 .search-bar__form-label {
   /* background-color: greenyellow; */
@@ -191,10 +192,13 @@ body {
 .search-bar__form-search {
   background-color: white;
   width: 70%;
+  border-radius: 1em;
+  border: none;
 }
 .search-bar__form-submit {
-  background-color: darkslategray;
+  background-color: #211E5F;
   color: white;
+  margin-left: 1em;
 }
 .search-bar__carrito-container {
   flex: 0 0 3em;
@@ -205,20 +209,21 @@ body {
 }
 .search-bar .menu-toggle {
   display: none;
-  background-color: red;
+  background-color: #211E5F;
   flex: 0 0 3em;
   position: relative;
   cursor: pointer;
 }
 .search-bar .menu-toggle__label {
   display: block;
-  background-color: black;
-  /* width: 100%; */
+  border: 0.1em solid white;
+  border-radius: 0.2em;
+  background-color: #211E5F;
   height: 100%;
 }
 .search-bar .menu-toggle__top-bread, .search-bar .menu-toggle__meat, .search-bar .menu-toggle__bottom-bread {
   display: block;
-  background-color: #333;
+  background-color: #b3b2b2;
   height: 0.2em;
   position: absolute;
   left: 0.5em;
@@ -246,6 +251,7 @@ body {
 }
 .section-cards__header {
   text-align: center;
+  padding-bottom: 1em;
 }
 
 .cards-container {
