@@ -1,8 +1,11 @@
 @import 'base/_reset';
 @import 'base/_typography';
 
-@import 'components/_card.scss';
+@import 'components/_card';
 
 @import 'layout/_header';
 
-@import 'pages/_index'
+@import 'pages/_index';
+@import 'pages/_nosotros';
+@import 'pages/_contacto';
+@import 'pages/_alta';

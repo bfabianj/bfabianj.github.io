@@ -54,12 +54,17 @@
 
     &__nav-link {
         display: block;
-        background-color: #211E5F   ;
+        background-color: #211E5F;
+        border: .5em solid #211E5F;
+
         color: #fff;
         padding: 1em 2em;
         text-decoration: none;
     }
 
+    &__nav-link:hover{
+        border-bottom: .3em solid white;
+    }
     @media (max-width: 768px) {
         .nav-bar {
             display: none;
