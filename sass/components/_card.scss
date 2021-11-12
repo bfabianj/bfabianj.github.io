@@ -20,6 +20,7 @@ $orange: hsl(50,80%,50%);
     align-items: center;
     flex-wrap: wrap;
     max-width: 1000px;
+    color: #211E5F;
 }
 
 .heading {
@@ -27,13 +28,11 @@ $orange: hsl(50,80%,50%);
     margin-left: 1rem;
     font-weight: 900;
     font-size: 1.618rem;
-    text-transform: uppercase;
     letter-spacing: .1ch;
     line-height: 1;
     padding-bottom: .5em;
     margin-bottom: 1rem;
     position: relative;
-
 }
 
 .description {
@@ -66,15 +65,15 @@ $orange: hsl(50,80%,50%);
     &__content {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         border-radius: 6px;
         background-position: center;
         background-size: cover;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
         position: absolute;
         height: 100%;
         width: 100%;
+        text-align: center;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
         transform-style: preserve-3d;

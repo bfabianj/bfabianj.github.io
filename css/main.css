@@ -9,6 +9,7 @@
 
 body {
   box-sizing: border-box;
+  background-color: #f1f2f3;
 }
 
 body {
@@ -22,6 +23,7 @@ body {
   align-items: center;
   flex-wrap: wrap;
   max-width: 1000px;
+  color: #211E5F;
 }
 
 .heading {
@@ -29,7 +31,6 @@ body {
   margin-left: 1rem;
   font-weight: 900;
   font-size: 1.618rem;
-  text-transform: uppercase;
   letter-spacing: 0.1ch;
   line-height: 1;
   padding-bottom: 0.5em;
@@ -68,15 +69,15 @@ body {
 .card__image-container, .card__content {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   border-radius: 6px;
   background-position: center;
   background-size: cover;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
   position: absolute;
   height: 100%;
   width: 100%;
+  text-align: center;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   transform-style: preserve-3d;
@@ -252,9 +253,10 @@ body {
 .search-bar__logo-container, .search-bar__form-container {
   padding: 1em;
 }
-.search-bar__logo-container {
-  color: white;
-  background-color: #211E5F;
+.search-bar__logo {
+  background-position: center;
+  background-size: contain;
+  height: 3em;
 }
 .search-bar__form-container {
   background-color: #211E5F;
@@ -326,10 +328,53 @@ body {
   }
 }
 
-.section-cards {
-  background-color: #f1f2f3;
-  padding: 1em;
+/**************************
+        FONDO
+**************************/
+.background {
+  background-image: url(/img/imagen-02.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 120vh;
+  z-index: -1;
+  position: relative;
 }
+
+.cartel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 50%;
+  margin: 0 auto;
+}
+.cartel-logo {
+  height: 15.5em;
+  width: 15.5em;
+}
+.cartel-txt {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+}
+.cartel-txt_one {
+  font-size: 2em;
+}
+.cartel-txt_two {
+  font-size: 5em;
+  text-transform: uppercase;
+  font-style: italic;
+}
+.cartel-txt_three {
+  font-size: 3em;
+}
+
 .section-cards__header {
   text-align: center;
   padding-bottom: 1em;
