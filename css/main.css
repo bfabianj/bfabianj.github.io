@@ -9,28 +9,93 @@
 
 body {
   box-sizing: border-box;
-  background-color: #f1f2f3;
+  background: linear-gradient(#f1f2f3, #211E5F);
 }
 
 body {
   font-family: "Open Sans", sans-serif;
 }
 
+/**************************
+        HEADER
+**************************/
+.background {
+  background-image: url(../img/imagen-02.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  width: 100%;
+  height: 120vh;
+  position: relative;
+}
+
+.cartel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 50%;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .cartel {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.cartel-logo {
+  height: 15.5em;
+  width: 15.5em;
+}
+@media screen and (max-width: 768px) {
+  .cartel-logo {
+    display: none;
+  }
+}
+.cartel-txt {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #fff;
+}
+@media screen and (max-width: 768px) {
+  .cartel-txt {
+    text-align: center;
+  }
+}
+.cartel-txt_one {
+  font-size: 2em;
+}
+.cartel-txt_two {
+  font-size: 5em;
+  text-transform: uppercase;
+  font-style: italic;
+}
+.cartel-txt_three {
+  font-size: 3em;
+}
+
+/**************************
+    CARD HEADER
+**************************/
 .section-cards__header {
   display: flex;
   margin: 0 auto;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  max-width: 1000px;
+  /*    max-width: 1000px;*/
   color: #211E5F;
 }
 
 .heading {
   width: 100%;
-  margin-left: 1rem;
   font-weight: 900;
-  font-size: 1.618rem;
+  font-size: 2rem;
   letter-spacing: 0.1ch;
   line-height: 1;
   padding-bottom: 0.5em;
@@ -41,10 +106,12 @@ body {
 .description {
   width: 100%;
   margin-top: 0;
-  margin-left: 1rem;
   margin-bottom: 3rem;
 }
 
+/**************************
+          CARD
+**************************/
 .card {
   color: inherit;
   cursor: pointer;
@@ -81,18 +148,18 @@ body {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   transform-style: preserve-3d;
-  transition: ease-in-out 600ms;
+  transition: ease-in-out 1s;
 }
 .card__image {
   height: 80%;
 }
-
 .card__image-container {
+  /* Front */
   background-size: cover;
   padding: 2rem;
   font-size: 1.618rem;
   font-weight: 600;
-  color: black;
+  color: #fff;
   overflow: hidden;
   font-family: Poppins, sans-serif;
 }
@@ -104,7 +171,8 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, #1a9be6, #1a57e6);
+  /*          background: linear-gradient(135deg, adjust-hue($primary, -20deg), $primary);*/
+  background: linear-gradient(135deg, #ecf4f9, #ecf0f9);
   opacity: 0.25;
   z-index: -1;
 }
@@ -116,6 +184,7 @@ body {
 }
 
 .card__content {
+  /* Back */
   background: #fff;
   transform: rotateY(-180deg);
   padding: 0 2em;
@@ -150,7 +219,7 @@ body {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   font-weight: bold;
-  color: white;
+  color: #fff;
   padding: 0.5em 1em;
   border-radius: 100px;
   font: inherit;
@@ -199,15 +268,12 @@ body {
   display: block;
 }
 #menu:checked ~ .search-bar .menu-toggle__label {
-  background-color: yellow;
+  background-color: #f1f2f3;
 }
 
 /**************************
         NAV BAR
 **************************/
-.nav-bar {
-  /* background-color: mediumturquoise; */
-}
 .nav-bar__nav-list {
   display: flex;
   list-style-type: none;
@@ -231,10 +297,10 @@ body {
   text-decoration: none;
 }
 .nav-bar__nav-link:hover {
-  border-bottom: 0.3em solid white;
+  border-bottom: 0.3em solid #fff;
 }
 @media (max-width: 768px) {
-  .nav-bar .nav-bar {
+  .nav-bar {
     display: none;
   }
 }
@@ -263,16 +329,15 @@ body {
   flex-basis: 100%;
   display: flex;
   justify-content: center;
-  color: white;
+  color: #fff;
   margin: auto;
   width: 30em;
 }
 .search-bar__form-label {
-  /* background-color: greenyellow; */
   display: none;
 }
 .search-bar__form-search {
-  background-color: white;
+  background-color: #fff;
   width: 70%;
   border-radius: 1em;
   padding-left: 1em;
@@ -280,7 +345,7 @@ body {
 }
 .search-bar__form-submit {
   background-color: #211E5F;
-  color: white;
+  color: #fff;
   margin-left: 1em;
 }
 .search-bar__carrito-container {
@@ -328,51 +393,23 @@ body {
   }
 }
 
-/**************************
-        FONDO
-**************************/
-.background {
-  background-image: url(/img/imagen-02.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 120vh;
-  z-index: -1;
-  position: relative;
+.main-footer {
+  background-color: #211e5f;
+  display: grid;
+  grid-template-columns: -webkit-min-content auto;
+  grid-template-columns: min-content auto;
 }
 
-.cartel {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 50%;
-  margin: 0 auto;
+.footer__logo {
+  height: 3em;
+  width: 3em;
 }
-.cartel-logo {
-  height: 15.5em;
-  width: 15.5em;
-}
-.cartel-txt {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  color: white;
-}
-.cartel-txt_one {
-  font-size: 2em;
-}
-.cartel-txt_two {
-  font-size: 5em;
-  text-transform: uppercase;
-  font-style: italic;
-}
-.cartel-txt_three {
-  font-size: 3em;
+
+.footer__copyright {
+  margin: auto;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
 }
 
 .section-cards__header {
@@ -392,23 +429,20 @@ body {
   }
 }
 
-.section {
-  background-color: #f1f2f3;
-}
-.section__header {
+.section-nosotros__header {
   width: 70%;
   margin: auto;
   text-align: center;
   padding: 1em;
   text-decoration: underline;
 }
-.section__header-content {
+.section-nosotros__header-content {
   width: 70%;
   margin: 0 auto 1em;
   text-indent: 5em;
   line-height: 2em;
 }
-.section__title {
+.section-nosotros__title {
   width: 70%;
   margin: auto;
   background-color: #211E5F;
@@ -419,7 +453,7 @@ body {
   padding: 1em;
   text-decoration: underline;
 }
-.section__content {
+.section-nosotros__content {
   width: 70%;
   margin: 0 auto 1em;
   border-radius: 0 0 1em 1em;
@@ -429,60 +463,57 @@ body {
   padding: 1em;
 }
 
-.section {
-  background-color: #f1f2f3;
-}
-.section__header {
+.section-contacto__header {
   width: 70%;
   margin: auto;
   text-align: center;
   text-decoration: underline;
   padding: 0.1em;
 }
-.section__header-content {
+.section-contacto__header-content {
   text-align: center;
 }
-.section__title {
+.section-contacto__title {
   width: 70%;
   margin: auto;
   background-color: #211E5F;
-  color: white;
+  color: #fff;
   border: 0.1em solid black;
   border-radius: 1em 1em 0 0;
   text-align: center;
   padding: 1em;
   text-decoration: underline;
 }
-.section__content {
+.section-contacto__content {
   width: 70%;
   margin: 0 auto 1em;
   border-radius: 0 0 1em 1em;
-  border: 0.1em solid black;
-  background-color: white;
+  border: 0.1em solid #000;
+  background-color: #fff;
   text-align: justify;
   padding: 1em;
 }
-.section-form {
+.section-contacto-form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 40%;
   margin: 0.5em auto 0.3em;
   padding: 2em;
-  border: 0.1em solid black;
+  border: 0.1em solid #000;
 }
-.section-form__label {
+.section-contacto-form__label {
   text-align: center;
   padding: 1em;
   letter-spacing: 0.5em;
 }
-.section-form__input {
+.section-contacto-form__input {
   width: 70%;
   align-self: center;
   padding: 1em;
   border-radius: 1em;
 }
-.section-form__textarea {
+.section-contacto-form__textarea {
   resize: none;
   height: 10em;
   width: 70%;
@@ -491,25 +522,22 @@ body {
   padding: 1em;
   border-radius: 1em;
 }
-.section-form__submit {
+.section-contacto-form__submit {
+  text-align: center;
   background-color: #4c8d44;
-  color: white;
+  color: #fff;
   padding: 1em;
-  width: 20%;
   align-self: center;
   border-radius: 15px;
   margin: 1em;
   margin-top: 1em;
   letter-spacing: 0.2em;
 }
-.section-form__submit:hover {
+.section-contacto-form__submit:hover {
   background-color: gold;
-  color: black;
+  color: #000;
 }
 
-.section-add {
-  background-color: #f1f2f3;
-}
 .section-add__header {
   width: 70%;
   margin: auto;
@@ -561,6 +589,7 @@ body {
 .section-add-form__btn {
   margin: auto;
   width: 50%;
+  text-align: center;
 }
 .section-add-form__btn-submit, .section-add-form__btn-reset {
   color: white;

@@ -26,7 +26,7 @@
     }
 
     &:checked ~ .search-bar .menu-toggle__label{
-        background-color: yellow;
+        background-color: #f1f2f3;
     }
 }
 
@@ -34,8 +34,6 @@
         NAV BAR
 **************************/
 .nav-bar {
-        /* background-color: mediumturquoise; */
-
     &__nav-list {
         display: flex;
         list-style-type: none;
@@ -63,10 +61,10 @@
     }
 
     &__nav-link:hover{
-        border-bottom: .3em solid white;
+        border-bottom: .3em solid #fff;
     }
     @media (max-width: 768px) {
-        .nav-bar {
+        & {
             display: none;
         }
     }
@@ -96,18 +94,17 @@
         flex-basis: 100%;
         display: flex;
         justify-content: center;
-        color: white;
+        color: #fff;
         margin: auto;
         width: 30em;
     }
 
     &__form-label {
-        /* background-color: greenyellow; */
         display: none;
     }
 
     &__form-search {
-        background-color: white;
+        background-color: #fff;
         width: 70%;
         border-radius: 1em;
         padding-left: 1em;
@@ -116,7 +113,7 @@
 
     &__form-submit {
         background-color: #211E5F;
-        color: white;
+        color: #fff;
         margin-left: 1em;
     }
 
@@ -174,59 +171,5 @@
             display: block;
             }
         }
-    }
-}
-
-/**************************
-        FONDO
-**************************/
-
-.background{
-    background-image: url(/img/imagen-02.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 120vh;
-    z-index: -1;
-    position: relative;
-}
-
-.cartel {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 50%;
-    margin: 0 auto;
-
-    &-logo {
-        height: 15.5em;
-        width: 15.5em;
-    }
-
-    &-txt{
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        color: white;
-    }
-
-    &-txt_one {
-        font-size: 2em;
-    }
-
-    &-txt_two {
-        font-size: 5em;
-        text-transform: uppercase;
-        font-style: italic;
-    }
-
-    &-txt_three {
-        font-size: 3em;
     }
 }

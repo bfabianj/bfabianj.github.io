@@ -1,6 +1,4 @@
 .section-add {
-    background-color: #f1f2f3;
-
     &__header{
         width: 70%;
         margin: auto;
@@ -60,6 +58,7 @@
         &__btn{
             margin: auto;
             width: 50%;
+            text-align: center;
 
             &-submit,
             &-reset{
