@@ -16,16 +16,16 @@
         <nav class="nav-bar">
             <ul class="nav-bar__nav-list">
                 <li class="nav-bar__nav-item">
-                    <a class="nav-bar__nav-link" href="index.html">Inicio</a>
+                    <a class="nav-bar__nav-link" href="" id="inicio">Inicio</a>
                 </li>
                 <li class="nav-bar__nav-item">
-                    <a class="nav-bar__nav-link" href="alta.html">Alta</a>
+                    <a class="nav-bar__nav-link" href="" id="alta">Alta</a>
                 </li>
                 <li class="nav-bar__nav-item">
-                    <a class="nav-bar__nav-link" href="contacto.html">Contacto</a>
+                    <a class="nav-bar__nav-link" href="" id="contacto">Contacto</a>
                 </li>
                 <li class="nav-bar__nav-item">
-                    <a class="nav-bar__nav-link" href="nosotros.html">Nosotros</a>
+                    <a class="nav-bar__nav-link" href="" id="nosotros">Nosotros</a>
                 </li>
             </ul>
         </nav>
@@ -55,118 +55,26 @@
         </div>
     </header>
 
-    <main>
+    <!-- Zona de inyección de plantillas SPA -->
 
-        <section class="section-cards">
+    <main></main>
 
-            <div class="background">
-                <div class="cartel">
-                    <img class="cartel-logo" src="img/logo_blanco-03.png" alt="Logo">
-                    <div class="cartel-txt">
-                        <p class="cartel-txt_one">Tu conexión con las Aguas Abiertas.</p>
-                        <p class="cartel-txt_two">Connecticus</p>
-                        <p class="cartel-txt_three">Las mejores competencias, en un solo lugar.</p>
-                    </div>
-                </div>
-            </div>
-
-            <header class="section-cards__header">
-                <h1 class="heading">Competencias disponibles</h1>
-                <p class="description">Elegí la competencia, inscribite, y agregala al carrito.</p>
-            </header>
-
-            <div class="cards-container">
-                <div class="card">
-                    <article class="card__article">
-                        <div class="card__image-container"> <!-- Front -->
-                            <img class="card__image" src="img/01-tw_3-puentes.jpg" alt="Los 3 Puentes. Trelew.">
-                            <p class="card__heading">Natación en Trelew.</p>
-                        </div>
-                        <div class="card__content">   <!-- Back -->
-                            <h2 class="card__heading">Los 3 Puentes.</h2>
-                            <div class="card__description">
-                                <p> Natación. Trelew. Tres distancias distintas, sobre el Río Chubut.</p>
-                                <button class="button">Inscribite!</button>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-
-                <div class="card">
-                    <article class="card__article">
-                        <div class="card__image-container">
-                            <img class="card__image" src="img/02-pm_natatlon.jpg" alt="Natatlón en Puerto Madryn">
-                            <p class="card__heading">Natatlón en Puerto Madryn.</p>
-                        </div>
-                        <div class="card__content">
-                            <h2 class="card__heading">Natatlón. Campeonato.</h2>
-                            <div class="card__description">
-                                <p>Puerto Madryn. Primera Fecha. Distancias Sprint, Promocional, y Postas.</p>
-                                <button class="button">Inscribite!</button>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-
-                <div class="card">
-                    <article class="card__article">
-                        <div class="card__image-container">
-                            <img class="card__image" src="img/03-pm_natacion.jpg" alt="Natación en Puerto Madryn">
-                            <p class="card__heading">Gran Campeonato de Aguas Abiertas de Puerto Madryn.</p>
-                        </div>
-                        <div class="card__content">
-                            <h2 class="card__heading">Natación. Gran Campeonato de Aguas Abiertas.</h2>
-                            <div class="card__description">
-                                <p>Puerto Madryn. Primer Fecha. Distancias competitivas y promocional.</p>
-                                <button class="button">Inscribite!</button>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-
-                <div class="card">
-                    <article class="card__article">
-                        <div class="card__image-container">
-                            <img class="card__image" src="img/04-vla_natacion.jpg" alt="Natación en Villa La Angostura">
-                            <p class="card__heading">Natación en Villa La Angostura. Carrera.</p>
-                        </div>
-                        <div class="card__content">
-                            <h2 class="card__heading">Natación. Carrera.</h2>
-                            <div class="card__description">
-                                <p>Playa Lago Correntoso, Villa La Angostura, Neuquén. Distancias competitiva y promocional.</p>
-                                <button class="button">Inscribite!</button>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-
-                <div class="card">
-                    <article class="card__article">
-                        <div class="card__image-container">
-                            <img class="card__image" src="img/05-pm_folias.jpg" alt="iphone-1">
-                            <p class="card__heading">Natación en Puerto Madryn. Vuelta al Folias</p>
-                        </div>
-                        <div class="card__content">
-                            <h2 class="card__heading">Natación. Vuelta al Folias</h2>
-                            <div class="card__description">
-                                <p>Puerto Madryn, Playa Paraná. </p>
-                                <button class="button">Inscribite!</button>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-
-            </div>
-        </section>
-    </main>
     <footer class="main-footer">
-
-            <img class="footer__logo" src="img/logo_blanco-03.png" alt="Logo">
-
+        <img class="footer__logo" src="img/logo_blanco-03.png" alt="Logo">
         <div class="footer__copyright">
             <p>Desarrollado por Fabián Barnes <span>&copy</span> 2021</p>
         </div>
-
     </footer>
+
+    <script src="js/menu/card.js"></script>
+
+    <!-- Scripts de plantillas -->
+    <script src="js/menu/inicio.js"></script>
+    <script src="js/menu/alta.js"></script>
+    <script src="js/menu/contacto.js"></script>
+    <script src="js/menu/nosotros.js"></script>
+
+    <!-- Scripts de Arranque -->
+    <script src="js/main.js"></script>
 </body>
 </html>

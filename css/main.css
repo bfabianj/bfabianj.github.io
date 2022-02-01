@@ -110,7 +110,7 @@ body {
 }
 
 /**************************
-          CARD
+        CARD
 **************************/
 .card {
   color: inherit;
@@ -240,6 +240,10 @@ body {
   border-radius: 100px;
   left: 10px;
   top: 16px;
+}
+
+.active {
+  font-weight: bold;
 }
 
 /**************************
@@ -603,7 +607,7 @@ body {
   border: 0 3px 3px 0 black solid;
 }
 .section-add-form__btn-submit {
-  background-color: #4c8d44;
+  background-color: #BABACC;
 }
 .section-add-form__btn-reset {
   background-color: #E72E60;
