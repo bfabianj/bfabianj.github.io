@@ -358,6 +358,7 @@ body {
   color: white;
   margin: auto;
   padding: 0.5em;
+  cursor: pointer;
 }
 .search-bar .menu-toggle {
   display: none;
@@ -615,4 +616,56 @@ body {
 .section-add-form__btn-submit:hover, .section-add-form__btn-reset:hover {
   background-color: gold;
   color: black;
+}
+.section-add table, .section-add th, .section-add td {
+  border: 1px solid white;
+  border-collapse: collapse;
+  color: white;
+}
+.section-add table {
+  width: 100%;
+}
+.section-add th, .section-add td {
+  padding: 5px;
+}
+
+.section-carrito {
+  padding: 5px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  overflow-y: auto;
+  display: none;
+  position: fixed;
+  background-color: #f1f2f3;
+  z-index: 1;
+  top: 150px;
+  left: 150px;
+  right: 150px;
+  bottom: 150px;
+  box-shadow: 0.3em 0.3em 10em 0.3em black;
+}
+.section-carrito--visible {
+  display: block;
+}
+.section-carrito table, .section-carrito th, .section-carrito td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+}
+.section-carrito table {
+  width: 90%;
+  margin: 0 auto;
+}
+.section-carrito th, .section-carrito td {
+  padding: 5px;
+}
+.section-carrito button.btn__enviarCarrito {
+  float: right;
+  margin: 15px;
+  width: 100px;
+  height: 35px;
+  font-size: 1.1em;
+  font-weight: bold;
 }/*# sourceMappingURL=main.css.map */

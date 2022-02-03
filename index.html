@@ -54,9 +54,11 @@
             </div>
         </div>
     </header>
-
+    
+    <!-- Zona del Menú Modal del Carrito -->
+    <div class="section-carrito"></div>
+    
     <!-- Zona de inyección de plantillas SPA -->
-
     <main></main>
 
     <footer class="main-footer">
@@ -65,14 +67,35 @@
             <p>Desarrollado por Fabián Barnes <span>&copy</span> 2021</p>
         </div>
     </footer>
+    <!-- ----------------------- -->
+    <!--     Zona de Scripts     -->
+    <!-- ----------------------- -->
 
-    <script src="js/menu/card.js"></script>
+    <!-- Librerías -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js" integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Clientes -->
+    <script src="js/clientes/http.js"></script>
+
+    <!-- Servicios -->
+    <script src="js/servicios/productos.js"></script>
+    <script src="js/servicios/carrito.js"></script>
+
+    <!-- Modelos -->
+    <script src="js/modelos/productos.js"></script>
+    <script src="js/modelos/carrito.js"></script>
+
+    <!-- Controladores -->
+    <script src="js/controladores/productos.js"></script>
+    <script src="js/controladores/carrito.js"></script>
 
     <!-- Scripts de plantillas -->
     <script src="js/menu/inicio.js"></script>
     <script src="js/menu/alta.js"></script>
     <script src="js/menu/contacto.js"></script>
     <script src="js/menu/nosotros.js"></script>
+    
+    <script src="js/menu/carrito.js"></script>
 
     <!-- Scripts de Arranque -->
     <script src="js/main.js"></script>
